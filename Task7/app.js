@@ -1,3 +1,4 @@
+// A: yaxsi olar ki, === istifade etsen daha yaxsi olar. 
 let secdiyimMusiqi = Number(
   prompt(`Sevdiyin musiqini sec 
 1.Linkin Park- in the end
