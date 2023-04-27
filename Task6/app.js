@@ -1,3 +1,5 @@
+// A: done as 🐉
+
 let width = Number(prompt("Width : "));
 
 let length = Number(prompt("Length : "));
