@@ -1,3 +1,4 @@
+// A: great
 let width = Number(prompt("Width : "));
 
 let length = Number(prompt("Length : "));
