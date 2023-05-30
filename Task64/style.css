@@ -1,0 +1,39 @@
+.colorChng{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.circle-container{
+    display: flex;
+    gap:5px;
+}
+.circle{
+    border: 2px solid ;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  
+}
+
+.color-one{
+    background-color: gray;
+}
+
+.color-two{
+    background-color: red;
+}
+
+.color-three{
+    background-color: blue;
+}
+
+.color-four{
+    background-color: yellow;
+}
+
+p{
+    font-size: 18px;
+    font-weight: 700;
+}
