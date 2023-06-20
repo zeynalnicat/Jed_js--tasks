@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="users"></div>
+
+    <script>
+        const userDiv = document.querySelector(".users")
+        const url = "http://localhost:3000/users"
+       async function getUsers(url){
+        const {data} = await axios.get(url)
+        return data
+        }
+
+        async function writeUsers(){
+            const users = getUsers(url)
+            users.then((element)=>{
+                element.forEach((user)=>{
+                   const btn = document.createElement("button")
+                   btn.className="removeBtn"
+                   btn.textContent="Remove"
+                   const div = document.createElement("div")
+                   div.className="userContainer"
+                   const userName = document.createElement("h3")
+                   userName.textContent=user.firstname + " " + user.lastname
+                   const email = document.createElement("p")
+                   email.textContent=user.email
+                   const age = document.createElement("p")
+                   age.textContent="Age: " + user.age
+                   div.appendChild(userName)
+                   div.appendChild(btn)
+                   div.appendChild(email)
+                   div.appendChild(age)
+                   userDiv.appendChild(div)
+
+                   btn.onclick = ()=>{
+                    let ans = confirm("Are you sure to delete?")
+                    if(ans){
+                        axios.delete(url+ "/" + user.id).then((respnse)=>{
+                            alert("Succesfuly Deleted")
+                            window.location.reload()
+                        })
+                    }
+                }
+                })
+            })
+        }
+        writeUsers()
+    </script>
+</body>
+</html>
