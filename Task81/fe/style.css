@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.add-number{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding: 40px;
+    border-radius: 10px;
+    gap:20px;
+    align-items: baseline;
+    border: 1px solid;
+    margin: 60px auto;
+    background-color: beige;
+}
+
+input,button{
+    border-radius: 4px;
+    background-color: rgb(23, 16, 16);
+    color:white;
+    padding: 10px;
+ 
+}
+
+.add-number>button{
+   width: 100%;
+}
+
+
+.eachContainer{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    width: 300px;
+    border: 1px solid;
+}
+
+.eachContainer h1, p{
+    text-align: center;
+}
