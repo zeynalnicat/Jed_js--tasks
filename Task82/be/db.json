@@ -1,0 +1,32 @@
+{
+  "blog": [
+    {
+      "author": "Nicat",
+      "title": "Something",
+      "description": "I did not like the website itself",
+      "date": "2023-06-24",
+      "id": 1
+    },
+    {
+      "author": "Affuros",
+      "title": "LikeButtons",
+      "description": "It does not work properly when clicking ",
+      "date": "2023-06-24",
+      "id": 2
+    },
+    {
+      "author": "Ali",
+      "title": "Task",
+      "description": "There was a uncertainty in the task.. Please solve it",
+      "date": "2023-06-23",
+      "id": 3
+    },
+    {
+      "author": "Seymur",
+      "title": "Date",
+      "description": "Date does not match the date I commented...",
+      "date": "2023-06-04",
+      "id": 4
+    }
+  ]
+}
